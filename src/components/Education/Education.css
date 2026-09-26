@@ -1,0 +1,100 @@
+/* Education section */
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 800px;
+}
+
+.education-card {
+  background-color: var(--color-bg-card);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--card-radius);
+  padding: var(--space-lg);
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.education-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.education-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.education-degree {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3xs);
+}
+
+.education-institution {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.education-gpa-badge {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: var(--space-3xs) var(--space-xs);
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent-text);
+  border: var(--border-width) solid var(--color-accent);
+  border-radius: var(--card-radius);
+  white-space: nowrap;
+}
+
+.education-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.education-bullet {
+  color: var(--color-border);
+}
+
+.education-coursework-section {
+  border-top: var(--border-width) solid var(--color-divider);
+  padding-top: var(--space-sm);
+}
+
+.education-coursework-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xs);
+}
+
+.education-coursework {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.coursework-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: var(--space-3xs) var(--space-xs);
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  border-radius: var(--card-radius);
+  border: var(--border-width) solid var(--color-border);
+}

@@ -1,0 +1,107 @@
+.experience-timeline {
+  position: relative;
+  padding-left: var(--space-xl);
+}
+
+/* Vertical line */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-timeline-line);
+}
+
+.experience-item {
+  position: relative;
+  padding-bottom: var(--space-2xl);
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline dot */
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-xl) + 4px);
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-timeline-dot);
+  border: 2px solid var(--color-bg);
+  z-index: 1;
+}
+
+.experience-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.experience-role {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.experience-company {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+}
+
+.experience-dates {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-left: auto;
+}
+
+.experience-location {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  margin-bottom: var(--space-sm);
+}
+
+.experience-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.experience-highlight {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  padding-left: var(--space-sm);
+  position: relative;
+}
+
+.experience-highlight::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .experience-meta {
+    flex-direction: column;
+    gap: var(--space-3xs);
+  }
+
+  .experience-dates {
+    margin-left: 0;
+  }
+}
