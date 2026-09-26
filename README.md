@@ -135,6 +135,7 @@ src/
 public/
   favicon.svg     # Site favicon
   resume.pdf      # Your resume (add this)
+  profile.jpg     # Your Profile (add this)
 ```
 
 ---
