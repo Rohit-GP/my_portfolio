@@ -112,7 +112,7 @@
   white-space: nowrap;
 }
 
-.skill-level-badge.level-strong {
+.skill-level-badge.level-proficient {
   color: var(--color-accent-text);
   background-color: var(--color-accent-subtle);
   border: var(--border-width) solid var(--color-accent);
@@ -124,7 +124,7 @@
   border: var(--border-width) solid hsla(200, 75%, 52%, 0.3);
 }
 
-.skill-level-badge.level-learning {
+.skill-level-badge.level-exploring {
   color: hsl(280, 65%, 65%);
   background-color: hsla(280, 65%, 65%, 0.12);
   border: var(--border-width) solid hsla(280, 65%, 65%, 0.3);

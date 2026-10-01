@@ -47,51 +47,51 @@ export const socialLinks = [
 /**
  * Skills - flat array.
  * category: drives tab filters (Featured / Languages / Frameworks / Databases / Infrastructure / Core / Tools)
- * level:    proficiency tier (Core | Working | Learning) - independent of category
+ * level:    proficiency tier (Proficient | Working | Exploring) - independent of category
  * icon:     key for react-icons lookup
  * custom:   key for inline SVG fallback when no matching react-icon exists
  * invert:   boolean - render icon inverted in dark mode (e.g. GitHub mark)
  */
 export const skills = [
   // Languages
-  { name: 'Java', category: 'Languages', level: 'Strong', icon: 'java' },
-  { name: 'Python', category: 'Languages', level: 'Strong', icon: 'python' },
-  { name: 'SQL', category: 'Languages', level: 'Strong', custom: 'database' },
+  { name: 'Java', category: 'Languages', level: 'Proficient', icon: 'java' },
+  { name: 'Python', category: 'Languages', level: 'Proficient', icon: 'python' },
+  { name: 'SQL', category: 'Languages', level: 'Proficient', custom: 'database' },
   { name: 'JavaScript', category: 'Languages', level: 'Working', icon: 'javascript' },
   { name: 'C++', category: 'Languages', level: 'Working', icon: 'cpp' },
   { name: 'C', category: 'Languages', level: 'Working', icon: 'c' },
-  { name: 'HTML5', category: 'Languages', level: 'Strong', icon: 'html5' },
-  { name: 'CSS3', category: 'Languages', level: 'Strong', icon: 'css3' },
+  { name: 'HTML5', category: 'Languages', level: 'Proficient', icon: 'html5' },
+  { name: 'CSS3', category: 'Languages', level: 'Proficient', icon: 'css3' },
 
   // Frameworks & Libraries
-  { name: 'Spring Boot', category: 'Frameworks', level: 'Strong', icon: 'spring' },
+  { name: 'Spring Boot', category: 'Frameworks', level: 'Proficient', icon: 'spring' },
   { name: 'Spring Security', category: 'Frameworks', level: 'Working', icon: 'spring' },
   { name: 'FastAPI', category: 'Frameworks', level: 'Working', custom: 'api' },
-  { name: 'React', category: 'Frameworks', level: 'Strong', icon: 'react' },
-  { name: 'LangGraph', category: 'Frameworks', level: 'Learning', custom: 'brain' },
+  { name: 'React', category: 'Frameworks', level: 'Proficient', icon: 'react' },
+  { name: 'LangGraph', category: 'Frameworks', level: 'Exploring', custom: 'brain' },
   { name: 'JDBC', category: 'Frameworks', level: 'Working', custom: 'plug' },
-  { name: 'NumPy', category: 'Frameworks', level: 'Learning', icon: 'numpy' },
-  { name: 'Pandas', category: 'Frameworks', level: 'Learning', icon: 'pandas' },
-  { name: 'Scikit-Learn', category: 'Frameworks', level: 'Learning', icon: 'scikitlearn' },
+  { name: 'NumPy', category: 'Frameworks', level: 'Exploring', icon: 'numpy' },
+  { name: 'Pandas', category: 'Frameworks', level: 'Exploring', icon: 'pandas' },
+  { name: 'Scikit-Learn', category: 'Frameworks', level: 'Exploring', icon: 'scikitlearn' },
 
   // Databases
   { name: 'PostgreSQL', category: 'Databases', level: 'Working', icon: 'postgresql' },
   { name: 'MySQL', category: 'Databases', level: 'Working', icon: 'mysql' },
 
   // Infrastructure
-  { name: 'Redis', category: 'Infrastructure', level: 'Learning', icon: 'redis' },
-  { name: 'Docker', category: 'Infrastructure', level: 'Learning', icon: 'docker' },
+  { name: 'Redis', category: 'Infrastructure', level: 'Exploring', icon: 'redis' },
+  { name: 'Docker', category: 'Infrastructure', level: 'Exploring', icon: 'docker' },
 
   // Core concepts
-  { name: 'OOP', category: 'Core', level: 'Strong', custom: 'layers' },
-  { name: 'DSA', category: 'Core', level: 'Strong', custom: 'tree' },
+  { name: 'OOP', category: 'Core', level: 'Proficient', custom: 'layers' },
+  { name: 'DSA', category: 'Core', level: 'Proficient', custom: 'tree' },
   { name: 'RESTful APIs', category: 'Core', level: 'Working', custom: 'api' },
   { name: 'JWT Authentication', category: 'Core', level: 'Working', custom: 'lock' },
 
   // Tools
-  { name: 'Git', category: 'Tools', level: 'Strong', icon: 'git' },
-  { name: 'GitHub', category: 'Tools', level: 'Strong', icon: 'github', invert: true },
-  { name: 'VS Code', category: 'Tools', level: 'Strong', icon: 'vscode' },
+  { name: 'Git', category: 'Tools', level: 'Proficient', icon: 'git' },
+  { name: 'GitHub', category: 'Tools', level: 'Proficient', icon: 'github', invert: true },
+  { name: 'VS Code', category: 'Tools', level: 'Proficient', icon: 'vscode' },
 ];
 
 /** Skills shown in the "Featured" tab */
@@ -106,27 +106,29 @@ export const projects = [
     name: 'InfraPilot',
     timeline: 'Aug 2026 – Sep 2026',
     stack: ['Python', 'FastAPI', 'LangGraph', 'React', 'Redis Streams', 'PostgreSQL', 'Docker'],
-    summary: 'Explainable Agentic NOC prototype for automated network, application, and system diagnostics.',
-    role: 'Sole Developer',
-    challenge: 'Building a multi-agent diagnostic system with deterministic fallbacks when LLM reasoning is unavailable.',
+    summary: 'Evidence-driven infrastructure diagnostics platform that transforms network, application, and system probe results into explainable root-cause hypotheses.',
+    role: 'Backend & AI Reasoning Developer',
+    challenge: 'Developing the AI reasoning and diagnosis pipeline while integrating asynchronous diagnostic results with the backend and maintaining evidence-backed, explainable outputs.',
     highlights: [
-      'Built an explainable Agentic NOC prototype for automated network, application, and system diagnostics using structured evidence and multi-agent reasoning.',
-      'Developed an event-driven pipeline with FastAPI, Redis Streams, and LangGraph agents for evidence analysis, validation, and root-cause diagnosis.',
-      'Containerized the multi-service platform with Docker Compose and implemented deterministic fallbacks for reliable diagnosis when LLM reasoning is unavailable.',
+      'Built a LangGraph diagnosis workflow with specialist agents that analyze network, system, and application evidence, validate findings, and produce ranked root-cause hypotheses with confidence scores and recommendations.',
+      'Connected the diagnostics engine, Redis Streams, and FastAPI backend for asynchronous diagnosis jobs, PostgreSQL persistence, and real-time status updates over WebSockets.',
+      'Built the React operator dashboard for managing targets and diagnosis jobs, viewing live progress and history, and inspecting evidence, hypotheses, confidence, and recommendations.',
+      'Implemented JWT authentication and role-based authorization, including admin-only user management and remediation approvals; added cloud LLM explanations with deterministic fallback.'
     ],
     github: 'https://github.com/Rohit-GP/infrapilot',
-    live: null, // TODO: add project live URL if available
+    live: null, 
   },
   {
     name: 'BlogApp',
     timeline: 'Feb 2026 – Mar 2026',
     stack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'React', 'MySQL', 'REST APIs'],
     summary: 'Full-stack blogging platform with stateless JWT authentication and role-based access control.',
-    role: 'Sole Developer',
-    challenge: 'Designing a normalized database schema and integrating Spring Data JPA/JDBC for reliable data persistence.',
+    role: 'Full-Stack Developer - Team Project',
+    challenge: 'Contributing across the frontend, backend, authentication, and database layers while integrating the components into a cohesive full-stack application.',
     highlights: [
-      'Engineered a full-stack blogging platform with stateless JWT authentication and Spring Security, implementing role-based access control for protected REST endpoints.',
-      'Designed a normalized MySQL database schema and integrated Spring Data JPA/JDBC for reliable relational data persistence and application-level data access.',
+      'Developed and integrated frontend and backend features using React, Spring Boot, and REST APIs for core blogging functionality.',
+      'Implemented stateless JWT authentication and Spring Security with role-based access control for securing protected application features and REST endpoints.',
+      'Designed and integrated the MySQL data layer using Spring Data JPA/JDBC, contributing across application logic, data persistence, and full-stack integration.'
     ],
     github: 'https://github.com/Rohit-GP/blog-app', 
     live: null, // TODO: add project live URL if available
